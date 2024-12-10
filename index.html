@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5x5 Lights Out</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="instructions">
+            <h2>Game Instructions</h2>
+            <p>1. The grid consists of lights (white = ON, blue = OFF).</p>
+            <p>2. Click a cell to toggle it and its adjacent neighbors.</p>
+            <p>3. Turn all lights ON to win the game.</p>
+            <p>4. Each game starts with a random solvable configuration.</p>
+            <p>Good luck, and have fun!</p>
+        </div>
+
+        <div class="game-container">
+            <h1>5x5 Lights Out</h1>
+            <p>Click on a cell to toggle it and its neighbors. Turn ON all the lights to win!</p>
+            <div id="grid"></div>
+        </div>
+
+        <div class="tutorial">
+            <h2>Game Tutorial</h2>
+            <p>The goal of <strong>Lights Out</strong> is to turn ON all the lights on the grid.</p>
+            <p>Clicking a light toggles its state and the state of its immediate neighbors.</p>
+            <p>If all lights are turned ON, you win!</p>
+            <p>Remember: A blue cell means the light is OFF, and a white cell means the light is ON.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <div class="addendum">
+            <h3>Addendum</h3>
+            <p>This game was developed using HTML, CSS, and JavaScript. The primary challenge was ensuring the board's starting configuration was solvable while maintaining randomness. The solution involved simulating random clicks on an initially empty board. The grid and styles were designed for clarity and user engagement. This project enhanced my skills in dynamic styling and event handling with JavaScript.</p>
+        </div>
+    </footer>
+    <script>
+        var x = document.lastModified;
+        document.getElementById('lastModified').textContent = x;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
